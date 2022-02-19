@@ -4,9 +4,6 @@ source("http://zzlab.net/GAPIT/gapit_functions.txt")
 library(GAPIT3)
 library(tidyverse)
 
-#read data
-df <- read.csv("EthA2_data.csv")
-
 #taxa names should be in first column
 #phenotypes should all be in remaining columns
 #multiple phenotypes can be used in the model at once
@@ -30,7 +27,7 @@ df <- read.csv("EthA2_data.csv")
 #############################################################################################################
 
 # The following simple GWAS script will automatically calculate kinship matrix using VanRaden method, 
-# perform GWAS and genomic prediciton with the optimal compression level using the default
+# perform GWAS and genomic prediction with the optimal compression level using the default
 # clustering algorithm (average) and group kinship type (Mean). 'PCA.total' argument specifies
 # number of principal components to include in the GWAS model.
 
@@ -103,13 +100,6 @@ myGAPIT <- GAPIT(
 # plots for each phenotype in 'Y'.
 
 #############################################################################################################
-
-
-
-
-
-
-
 
 
 
